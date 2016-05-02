@@ -1,38 +1,32 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
+  <p>Made with <span>♥</span> in NYC</p>
+  <ul class="social">
+      <li class="link-github">
+          <a href="https://github.com/timotius02">
+              <img src="{{ baseurl }}/assets/images/github_hover.svg" width="43" height="43"> Github
+          </a>
+      </li>
+      <li class="link-linkedin">
+          <a href="https://www.linkedin.com/in/timotius02">
+              <img src="{{ baseurl }}/assets/images/linkedin_hover.svg" width="43" height="43"> Linkedin
+          </a>
+      </li>
+      <li class="link-twitter">
+          <a href="https://twitter.com/timsitorus">
+              <img src="{{ baseurl }}/assets/images/twitter_hover.svg" width="43" height="43"> Twitter
+          </a>
+      </li>
+      <li class="link-medium">
+          <a href="https://medium.com/@timotiussitorus">
+              <img src="{{ baseurl }}/assets/images/medium_hover.svg" width="43" height="43"> Medium
+          </a>
+      </li>
+      <li class="link-mail">
+          <a href="mailto:timsitorus1@gmail.com">
+              <img src="{{ baseurl }}/assets/images/mail_hover.svg" width="43" height="43"> Email
+          </a>
+      </li>
+  </ul>
+  <img src="{{ baseurl }}/assets/images/outline-nyc.png" alt="Footer" class="footer">
 
 </footer>
