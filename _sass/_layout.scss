@@ -18,16 +18,16 @@
 .site-title {
 
     font-size: 32px;
-    color: #FFFFFF;
+    color: $white;
     letter-spacing: 1.59px;
     line-height: 39px;
 
-    &,
     &:visited {
         color: $white;
     }
     &:hover {
-            text-decoration: none;
+        color: $white;
+        text-decoration: none;
     }
 }
 
