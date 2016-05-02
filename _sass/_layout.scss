@@ -405,7 +405,8 @@ ul.social {
         min-width: 400px;
         max-width: calc(33.3% - 20px);
         overflow: hidden;
-
+        transition: all 0.25s ease;
+        
         img {
             width: 100%;
             height: 100%;
