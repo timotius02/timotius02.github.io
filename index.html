@@ -2,22 +2,116 @@
 layout: default
 ---
 
+
 <div class="home">
+  
+    <header id="header">
+        <div id='cubeContainer'>
+            <div class='cube'>
+                <div class='half1'>
+                    <div class='side s1'></div>
+                    <div class='side s2'></div>
+                    <div class='side s5'></div>
+                </div>
+                <div class='half2'>
+                    <div class='side s3'></div>
+                    <div class='side s4'></div>
+                    <div class='side s6'></div>
+                </div>
+            </div>
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
+            <h1>Hello, World!</h1>
+    </header>
+    <img src="{{ baseurl }}/assets/images/slant-transition.png" alt="Footer" class="slant">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <section id="intro">
+        <h1>About Me</h1>
+        <p><strong>Designer</strong>, <strong>Developer</strong>, and <strong>Hardware Hacker</strong><br>
+           Studying CS and Applied Math at <strong>Stony Brook University</strong><br>
+           Budding <strong>Musician</strong> and <strong>Writer </strong><br>
+           I &#9829; Building Awesome Things
+        </p>
+    </section>
+    <img src="{{ baseurl }}/assets/images/grey-white-slant.png" alt="Footer" class="slant">
+    <section id="projects">
+  
+            <h1>Projects</h1>
+            <ul class="project-list">
+                <li class="project-item">
+                    <a href="http://devpost.com/software/pokeface" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/pokeface.png" alt="PokeFace">
+                        </div>
+                        <h4 class="thumbnail-title">POKÉFACE</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="https://github.com/yehya/LookUp" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/lookup.png" alt="LookUp">
+                        </div>
+                        <h4 class="thumbnail-title">LOOKUP</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="http://devpost.com/software/archrover" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/archrover.png" alt="ArchRover">
+                        </div>
+                        <h4 class="thumbnail-title">ARCHROVER</h4>
+                    </a>
+                </li>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+                <li class="project-item">
+                    <a href="http://devpost.com/software/golfvr" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/golfvr.png" alt="GolfVR">
+                        </div>
+                        <h4 class="thumbnail-title">GOLFVR</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="http://devpost.com/software/smartwheel" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/smartwheel.png" alt="SmartWheel">
+                        </div>
+                        <h4 class="thumbnail-title">SMARTWHEEL</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="http://gitcommitted.co/" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/gitcommitted.png" alt="Git Committed">
+                        </div>
+                        <h4 class="thumbnail-title">GIT COMMITTED</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="http://timsitorus.com/notary-website/" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/notary.png" alt="Notary">
+                        </div>
+                        <h4 class="thumbnail-title">NOTARY</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="http://techcrunch.com/2015/05/03/split-lets-you-split-the-bill-fairly-not-equally/" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/split.png" alt="Split">
+                        </div>
+                        <h4 class="thumbnail-title">SPLIT</h4>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href="http://devpost.com/software/wearable-ultrasonic-obstacle-detector" target="_blank">
+                        <div class="thumbnail">
+                            <img src="{{ baseurl }}/assets/images/wuod.png" alt="Wearable Ultrasonic Obstacle Detector">
+                        </div>
+                        <h4 class="thumbnail-title">W.U.O.D.</h4>
+                    </a>
+                </li>
+            </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    </section>
 </div>
