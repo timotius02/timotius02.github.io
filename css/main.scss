@@ -96,6 +96,7 @@ $baseLength: 	   	100px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+		"mixins",
         "base",
         "layout",
         "syntax-highlighting"
