@@ -1,3 +1,7 @@
+---
+# BB-8 Style File
+---
+
 $body-color: #ffefe2;
 $light-grey: #C0BBBB;
 $orange: #ED783B;
@@ -9,25 +13,14 @@ $orange: #ED783B;
   transform: translate(-50%, -50%);
 }
 
-.featured-state  {
+body {
     background-color: #fedaa9;
-    
-    h1 {
-        font-family: 'Roboto', sans-serif;
-        color: #fff;
-        text-align: center;
-    }
 }
-
-.bb-body {
-  background-color: #fedaa9;
-  padding-top: 20px;
-    h1 {
+    
+h1 {
     font-family: 'Roboto', sans-serif;
     color: #fff;
     text-align: center;
-  }
-
 }
 
 #bb8 {
