@@ -14,7 +14,6 @@
 .logo {
     margin-bottom: 0;
     float: left;
-    clear: both;
 }
 .site-title {
 
@@ -61,7 +60,11 @@
 }
 
 @media (max-width: 850px) {
-    .site-nav {
-        display: none;
+    .logo {
+        float: none;
+        text-align: center;
+    }
+   .site-nav {
+    display: none;
   }
 }

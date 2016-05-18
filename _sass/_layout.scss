@@ -8,7 +8,7 @@
 #header {
     text-align: center;
     background: $black;
-    padding: 48px 0 55px 0;
+    padding: 50px 0 55px 0;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -22,6 +22,7 @@
 
 @media (max-width: 850px) {
     #header {
+        padding-top: 0;
         h1 {
             font-size: 35px;
         }
