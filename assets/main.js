@@ -9,4 +9,6 @@ $(document).ready(function() {
 
 	var body = $('#frame').contents().find("html");
 	$(body).css('cursor', 'pointer');
+
+
 })
