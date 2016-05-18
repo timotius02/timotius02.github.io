@@ -5,7 +5,6 @@
 
 $font-path: {{ baseurl }}/assets/fonts/mark_simonson_-_proxima_nova_alt_;
 
-// font_name font
 @font-face {
     font-family: 'Proxima Nova';
     src: url($font-path + 'regular-webfont.eot');
@@ -45,7 +44,7 @@ $font-path: {{ baseurl }}/assets/fonts/mark_simonson_-_proxima_nova_alt_;
     font-style: normal;
 }
 
-// Our variables
+// Base variables
 $base-font-family: 	"Proxima Nova", Helvetica, Arial, sans-serif;
 $base-font-size:   	16px;
 $base-font-weight: 	400;
@@ -79,13 +78,6 @@ $perspective: 	   	40000;
 $baseLength: 	   	100px;
 
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
@@ -99,6 +91,7 @@ $baseLength: 	   	100px;
 		"mixins",
 		"animations",
         "base",
-        "layout",
-        "syntax-highlighting"
+        "header",
+        "footer",
+        "layout"
 ;

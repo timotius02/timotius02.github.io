@@ -1,119 +1,17 @@
-/**
- * Site header
- */
-.site-header {
-    padding: 50px 60px 30px 60px;
-    min-height: 56px;
-    background-color: $black;
-    z-index: 100;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+// Home Page 
+// 
+.slant {
+    width: 100%;
 }
 
-.logo {
-    margin-bottom: 0;
-    float: left;
-}
-.site-title {
-
-    font-size: 32px;
-    color: $white;
-    letter-spacing: 1.59px;
-    line-height: 39px;
-
-    &:visited {
-        color: $white;
-    }
-    &:hover {
-        color: $white;
-        text-decoration: none;
-    }
-}
-
-.site-subtitle {
-    font-size: 16px;
-    color: $white;
-    letter-spacing: 1px;
-    line-height: 24px;
-}
-
-.site-nav {
-    float: right;
-    line-height: 36px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        font-size: 18px;
-        color: $white;
-        letter-spacing: 1.2px;
-        line-height: 20px;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
-    }
-}
-
-header#header {
+#header {
     text-align: center;
     background: $black;
     padding: 48px 0 55px 0;
     height: 100%;
-    
+    width: 100%;
+    overflow: hidden;
     h1 {
         font-size: 55px;
         color: $white;
@@ -122,11 +20,7 @@ header#header {
     }
 }
 
-.slant {
-    width: 100%;
-}
-
-section#intro {
+#intro {
     background-color: $grey;
     padding: 0 10px;
     .column {
@@ -163,7 +57,7 @@ section#intro {
     }
 }
 
-section#projects {
+#projects {
     padding-top: 50px;
     padding-bottom: 150px;
     background-color: $white;
@@ -181,6 +75,7 @@ section#projects {
     .project-list {
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         list-style-type: none;
         padding: 0 12.5%;
     }
@@ -193,6 +88,9 @@ section#projects {
         flex: 1 0 auto;
         width: 33.3%;
         min-width: 300px;
+        max-width: 400px;
+
+
 
         a {
             color: $black;
@@ -221,99 +119,8 @@ section#projects {
     }
 }
 
-
-/**
- * Site footer
- */
-.site-footer {
-
-    background-color: $blue;
-    text-align: center;
-
-    @include angle(before);
-
-    p {
-        position: absolute;
-        top: 25%;
-
-        width: 100%;
-        font-size: 28px;
-        font-family: "Proxima Nova Condensed", Helvetica, Arial, sans-serif;
-    }
-
-    span {
-        color: $pink;
-    }
-
-    img {
-        width: 100%
-    }
-}
-ul.social {
-    position: absolute;
-    top: 45%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    li {
-        padding: 0;
-        display: inline-block;
-        vertical-align: top;
-        padding: 20px 0;
-        transition: all 0.25s ease;
-
-        &:hover {
-            background-color: $grey;
-            border-radius: 10px;
-        }
-        a {
-            display: block;
-            width: 120px;
-            height: 70px;
-            text-indent: -9999px;
-            border: none !important;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-        }
-        a:hover {
-            background: transparent !important;
-            text-indent: 0;
-        }
-        a:hover img {
-            height: 35px !important;
-            margin-bottom: 20px;
-        }
-    }
-    li.link-github a {
-        background: url(../assets/images/github.svg) no-repeat center 0px;
-        background-size: 30px;
-        color: #666 !important;
-    }
-    li.link-linkedin a {
-        background: url(../assets/images/linkedin.svg) no-repeat center 0px;
-        background-size: 30px;
-        color: #0976b4 !important;
-    }
-    li.link-twitter a {
-        background: url(../assets/images/twitter.svg) no-repeat center 0px;
-        background-size: 35px;
-        color: #28aae1 !important;
-    }
-    li.link-medium a {
-        background: url(../assets/images/medium.svg) no-repeat center 0px;
-        background-size: 30px;
-        color: #000 !important;
-    }
-    li.link-mail a {
-        background: url(../assets/images/mail.svg) no-repeat center 0px;
-        background-size: 30px;
-        color: #dd4951 !important;
-    }
-}
-
+// Experiments Page
+//
 .experiments {
     background-color: $black;
     padding-top: 50px;
@@ -450,6 +257,8 @@ ul.social {
     
 }
 
+// Writing Page
+//
 .writing {
 
     .writing-header {
