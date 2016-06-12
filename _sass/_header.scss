@@ -74,7 +74,12 @@
     .site-subtitle {
         font-size: 12px;
     }
-   .site-nav {
-    display: none;
-  }
+    .site-nav {
+        float: none;
+    }
+   .links {
+        text-align: center;
+        padding: 5px 0;
+    }
+
 }
