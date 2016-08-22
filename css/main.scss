@@ -9,7 +9,6 @@ $font-path: {{ baseurl }}/assets/fonts/mark_simonson_-_proxima_nova_alt_;
     font-family: 'Proxima Nova';
     src: url($font-path + 'regular-webfont.eot');
     src: url($font-path + 'regular-webfont.eot?#iefix') format('embedded-opentype'), 
-         url($font-path + 'regular-webfont.woff2') format('woff2'),
          url($font-path + 'regular-webfont.woff') format('woff'),
          url($font-path + 'regular-webfont.ttf') format('truetype'),
          url($font-path + 'regular-webfont.svg#proxima_nova_alt_rgregular') format('svg');
@@ -64,6 +63,7 @@ $grey-color-dark:  	darken($grey-color, 25%);
 // Width of the content area
 $content-width:    	800px;
 
+$half-screen:       1045px;
 $phone:          	600px;
 $tablet:        	768px;
 

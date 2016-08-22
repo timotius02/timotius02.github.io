@@ -79,7 +79,7 @@
 }
 
 #projects {
-    padding-top: 50px;
+    padding-top: 5%;
     padding-bottom: 20%;
     background-color: $white;
 
@@ -142,7 +142,6 @@
 
 @media (max-width: $tablet) {
     #projects {
-        padding: 0;
         h1 {
             font-size: 26px;
         }
@@ -151,16 +150,16 @@
             font-size: 20px;
         }
     }
+
 }
 
 // Experiments Page
 //
 .experiments {
     background-color: $black;
-    padding-top: 50px;
+    padding-top: 5%;
     padding-bottom: 200px;
     display: block;
-
 
     & > h1 {
         width: 100%;
@@ -183,15 +182,10 @@
         display: flex;
         flex-flow: row wrap;
         width: 80%;
-        min-width: 1000px;
         margin: auto;
 
         .featured-desc {
             color: $white;
-            max-width: 70%;
-            min-width: 250px;
-            position: absolute;
-            top: 25%;
 
              p {
                 font-size: 20px;
@@ -199,8 +193,7 @@
         }
         .featured-stage {
             width: 100%;
-            margin: auto;
-            height: 450px;
+            height: 470px;
 
             h1 {
                 color: #fff;
@@ -212,12 +205,17 @@
 
 
         .left-col {
-            position: relative;
-            flex-grow: 1;
+            flex: 1;
+            // min-width: 281px;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-around;
         }
 
         .right-col {
-            flex-grow: 1;
+            flex: 2;
+            // min-width: 563px;
         }
 
     }
@@ -227,7 +225,7 @@
         background-color: $black;
         width: 90%;
         margin: auto;
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
     .experiment-list {
@@ -287,8 +285,32 @@
         }    
 
     }
+}
 
-    
+@media (max-width: $half-screen) {
+    .experiments {
+        & > h1 {
+            font-size: 28px;
+        }
+        #featured {
+            flex-flow: column wrap;
+            align-items: stretch;
+            width: 100%;
+                
+            .featured-desc {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .featured-stage {
+                -ms-zoom: 0.75;
+                -moz-transform: scale(0.75);
+                -o-transform: scale(0.75);
+                -webkit-transform: scale(0.75);
+                
+            }
+
+        }
+    }
 }
 
 // Writing Page
