@@ -47,6 +47,8 @@
             font-size: 18px;
             text-align: center;
             text-decoration: none;
+
+
         }
         a:hover {
             background: transparent !important;
@@ -55,6 +57,9 @@
         a:hover img {
             height: 35px !important;
             margin-bottom: 10px;
+            display: block;
+            margin: auto;
+            padding-bottom: 5px;
         }
     }
     li.link-github a {
