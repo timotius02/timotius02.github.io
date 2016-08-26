@@ -59,8 +59,11 @@ var roll = function() {
   $('.body').css({ 'transform': 'rotate(' + $dRot + 'deg)'});
 }
 
-setInterval(roll, 10);
 
-$( document ).on( "mousemove", function( event ) {
-  $myPos = event.pageX;
-});
+if (window.innerWidth > 768) {
+  setInterval(roll, 10);
+
+  $( document ).on( "mousemove", function( event ) {
+    $myPos = event.pageX;
+  });
+}
